@@ -88,7 +88,6 @@ export default function ServicesSection() {
           {showMore ? "Show Less" : "Show More Services"}
         </button>
       </div>
-      )
     </section>
   );
 }
