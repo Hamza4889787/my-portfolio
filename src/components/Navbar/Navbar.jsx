@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react"; // install lucide-react OR replace with 
 import Link from "next/link"; // 👈 import Link
 
 const NAVLINKS = [
-  { name: "Home", href: "/home" },
+  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Projects", href: "/projects" },
@@ -18,9 +18,9 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-gray-950/80 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="#home" className="text-2xl font-bold text-blue-500">
+        <Link href="/" className="text-2xl font-bold text-blue-500">
           Hamza<span className="text-white">Dev</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-8">
@@ -57,22 +57,22 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-gray-900 px-6 py-6 space-y-4">
           {NAVLINKS.map((link, i) => (
-            <a
+            <Link
               key={i}
               href={link.href}
               onClick={() => setOpen(false)}
               className="block text-gray-300 hover:text-blue-400 transition"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <a
+          <Link
             href="#contact"
             onClick={() => setOpen(false)}
             className="block px-4 py-2 rounded-lg bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       )}
     </nav>
