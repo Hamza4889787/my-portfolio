@@ -24,3 +24,38 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* --- marquee keyframes and base track styling --- */
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* use the marquee keyframes defined below */
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+  /* ensure the track width is automatic; duplicated content creates the 2x width */
+}
+
+/* move left by exactly half the track (the duplicated content) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* small polish for the skill buttons if you want extra fallback CSS */
+.skill {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* remove outline and add subtle focus ring */
+.skill:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
+  transform: scale(1.04);
+}
