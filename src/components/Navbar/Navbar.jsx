@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // install lucide-react OR replace with Heroicons
+import Link from "next/link"; // 👈 import Link
 
 const NAVLINKS = [
   { name: "Home", href: "/home" },
@@ -25,21 +26,21 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8">
           {NAVLINKS.map((link, i) => (
             <li key={i}>
-              <a
+              <Link
                 href={link.href}
                 className="text-gray-300 hover:text-blue-400 transition"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="px-4 py-2 rounded-lg bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
             >
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
 

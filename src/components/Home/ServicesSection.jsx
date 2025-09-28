@@ -10,6 +10,7 @@ import {
   Server,
   Shield, // example extra icon
 } from "lucide-react";
+import Link from "next/link";
 
 const SERVICES = [
   {
@@ -80,12 +81,12 @@ export default function ServicesSection() {
       </div>
       {/* Show More Button */}
       <div className="flex justify-center mt-10">
-        <button
-          onClick={() => setShowMore(!showMore)}
+        <Link
+          href="/services"
           className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition font-medium shadow-lg"
         >
-          {showMore ? "Show Less" : "Show More Services"}
-        </button>
+          Show More Services
+        </Link>
       </div>
     </section>
   );

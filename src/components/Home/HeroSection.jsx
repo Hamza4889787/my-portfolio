@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 function HeroSection() {
   return (
@@ -63,18 +65,18 @@ function HeroSection() {
             transition={{ duration: 1, delay: 0.9 }}
             className="flex justify-center md:justify-start gap-4"
           >
-            <a
-              href="#projects"
+            <Link
+              href="/projects"
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl font-medium shadow-lg transition transform hover:scale-105"
             >
               View My Work
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="px-6 py-3 border border-blue-500 hover:bg-blue-600/10 rounded-xl font-medium transition transform hover:scale-105"
             >
               Contact Me
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 
@@ -90,9 +92,12 @@ function HeroSection() {
             transition={{ duration: 6, repeat: Infinity }}
             className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-blue-600"
           >
-            <img
-              src="/your-image.jpg" // replace with your actual image path
+            <Image
+              src="/assets/main.jpg"
               alt="Hamza Ali"
+              width={600} // set width
+              height={400} // set height
+              priority
               className="w-full h-full object-cover"
             />
             {/* Glow Ring */}

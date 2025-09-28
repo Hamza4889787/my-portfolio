@@ -123,7 +123,7 @@ export default function SkillsSection({ duration = 40 }) {
   const handleResume = () => setPaused(false);
 
   return (
-    <section className="relative w-full h-[100px] flex items-center bg-transparent">
+    <section className="bg-black shadow-md relative w-full h-[100px] flex items-center ">
       <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-28 z-20 bg-gradient-to-r from-gray-900" />
       <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-28 z-20 bg-gradient-to-l from-gray-900" />
 
@@ -155,7 +155,11 @@ export default function SkillsSection({ duration = 40 }) {
                 onMouseLeave={handleResume}
                 onFocus={handlePause}
                 onBlur={handleResume}
-                className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r from-white/3 to-white/6 border border-white/6 backdrop-blur-sm shadow-md transform transition-transform hover:scale-105 focus:outline-none whitespace-nowrap"
+                className="inline-flex items-center gap-3 px-4 py-2 rounded-full 
+           bg-gradient-to-r from-gray-800/40 to-gray-900/40 
+           border border-gray-700 backdrop-blur-sm shadow-md 
+           transform transition-transform hover:scale-105 
+           focus:outline-none whitespace-nowrap"
                 type="button"
               >
                 <Icon className="w-8 h-8 flex-shrink-0" color={skill.color} />
