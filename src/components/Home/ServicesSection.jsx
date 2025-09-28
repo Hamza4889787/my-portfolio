@@ -3,46 +3,45 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
+  Code,
+  Database,
   Globe,
-  ShoppingCart,
-  MessageCircle,
-  Newspaper,
-  Utensils,
-  Laptop, // example extra icon
+  Smartphone,
+  Server,
+  Shield, // example extra icon
 } from "lucide-react";
 
 const SERVICES = [
   {
-    title: "Custom Website Development",
-    icon: <Globe className="w-8 h-8 text-blue-500" />,
-    desc: "Tailored websites built with modern technologies to fit your unique business needs.",
+    icon: <Code className="w-12 h-12 text-blue-400" />,
+    title: "Frontend Development",
+    desc: "Building responsive and modern UIs with React.js, Next.js, Tailwind, and Bootstrap.",
   },
   {
-    title: "E-Commerce Website & Online Store",
-    icon: <ShoppingCart className="w-8 h-8 text-green-500" />,
-    desc: "Scalable online stores with secure payments, product listings, and smooth checkout.",
+    icon: <Server className="w-12 h-12 text-purple-400" />,
+    title: "Backend Development",
+    desc: "Creating secure and scalable APIs using Node.js, Express.js, and authentication systems.",
   },
   {
-    title: "Real-Time Chat & Messaging Website",
-    icon: <MessageCircle className="w-8 h-8 text-purple-500" />,
-    desc: "Interactive chat apps with live messaging, Socket.IO, and push notifications.",
+    icon: <Database className="w-12 h-12 text-green-400" />,
+    title: "Database Management",
+    desc: "Designing and managing databases with MongoDB and SQL for fast and reliable data handling.",
   },
   {
-    title: "Blog or News Website",
-    icon: <Newspaper className="w-8 h-8 text-red-500" />,
-    desc: "SEO-friendly blogs and news portals with CMS integration for easy content updates.",
+    icon: <Globe className="w-12 h-12 text-pink-400" />,
+    title: "Full-Stack Solutions",
+    desc: "Delivering end-to-end MERN applications with reusable components and optimized workflows.",
   },
   {
-    title: "Online Food Ordering System",
-    icon: <Utensils className="w-8 h-8 text-orange-500" />,
-    desc: "User-friendly platforms for restaurants to handle orders, menus, and deliveries.",
+    icon: <Shield className="w-12 h-12 text-yellow-400" />,
+    title: "API Integration & Security",
+    desc: "Integrating REST APIs and ensuring data security with JWT authentication and middleware.",
   },
   {
-    title: "Portfolio & Business Websites",
-    icon: <Laptop className="w-8 h-8 text-yellow-500" />,
-    desc: "Professional websites to showcase portfolios, businesses, and personal brands.",
+    icon: <Smartphone className="w-12 h-12 text-teal-400" />,
+    title: "Responsive Design",
+    desc: "Crafting mobile-first designs to ensure seamless user experience across all devices.",
   },
-  // add more services below if needed
 ];
 
 export default function ServicesSection() {
