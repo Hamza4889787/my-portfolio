@@ -1,5 +1,7 @@
-import React from "react";
+"use client"; // 👈 add this line
+
 import { motion } from "framer-motion";
+import React from "react";
 
 function page() {
   return (
