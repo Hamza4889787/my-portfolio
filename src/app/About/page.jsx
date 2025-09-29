@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Briefcase, Code, Rocket, Users, Lightbulb, Globe } from "lucide-react";
 import React from "react";
 
-function Page() {
+function About() {
   return (
     <main className="bg-gray-950 text-white overflow-hidden">
       {/* Hero Section */}
@@ -187,4 +187,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default About;

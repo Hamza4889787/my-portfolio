@@ -67,7 +67,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            href="#contact"
+            href="/contact"
             onClick={() => setOpen(false)}
             className="block px-4 py-2 rounded-lg bg-blue-600 text-white font-medium shadow hover:bg-blue-700 transition"
           >
