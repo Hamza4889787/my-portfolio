@@ -27,18 +27,6 @@ function About() {
             viewport={{ once: true }}
             className="text-gray-300 leading-relaxed text-lg"
           >
-            My journey as a developer started with curiosity and a desire to
-            solve problems. Over the years, I evolved into a{" "}
-            <span className="text-blue-400">Full Stack MERN Developer</span> who
-            can transform business ideas into working solutions. I have
-            developed projects ranging from{" "}
-            <span className="text-purple-400">real-time chat apps</span> to{" "}
-            <span className="text-green-400">
-              scalable e-commerce platforms
-            </span>
-            .
-            <br />
-            <br />
             What excites me most is building solutions that{" "}
             <span className="text-pink-400">add real value</span> for businesses
             and users. My focus is on performance, security, and delivering a
