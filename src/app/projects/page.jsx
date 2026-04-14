@@ -5,9 +5,33 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const projectsData = [
   {
+    name: "UKA Auto Trade",
+    desc: "A modern auto trading platform for buying and selling vehicles online in UK Market.",
+    skills: [
+      "HTML", 
+      "CSS", 
+      "Tailwind CSS",  
+      "JavaScript", 
+      "React",
+      "Next JS",  
+      "Rest API Integration",
+      "JWT Authentication & Authorization", 
+      "Node js",
+      "Express JS",
+      "SQL Database",
+      "PHP ADMIN PANEL",
+      "XAMPP",
+      "Git & GitHub",
+      "Hostinger"
+    ],
+    images: ["assets/uka-1.png", "assets/uka-2.png", "assets/uka-3.png","assets/uka-4.png","assets/uka-5.png"],
+    url: "https://ukaautotrade.co.uk/", // Updated to the Lifeplan URL provided earlier
 
+  },
+  
+  {
     name: "Your LifePlan Journey",
-    desc: "Lifeplan is a comprehensive management application providing users with a structured roadmap for personal health, care planning, and goal tracking. I architected and built the entire frontend from scratch, ensuring a seamless bridge between complex backend data and a user-friendly interface. <br/><br/><strong>Key Features Implemented:</strong> <ul><li><strong>Intuitive Navigation System:</strong> Developed a custom, mobile-responsive navbar with integrated loading states and smooth transitions.</li><li><strong>Data Visualization:</strong> Created interactive dashboards to track health milestones and life goals.</li><li><strong>Responsive Architecture:</strong> Built with a 'Mobile-First' approach, ensuring full functionality on tablets and smartphones for on-the-go care management.</li><li><strong>Performance Optimization:</strong> Leveraged modern frontend techniques like client-side state management and optimized asset loading to ensure sub-second page transitions.</li></ul>",
+    desc: "Lifeplan is a comprehensive management application providing users with a structured roadmap for personal health, care planning, and goal tracking. I architected and built the entire frontend from scratch, ensuring a seamless bridge between complex backend data and a user-friendly interface.",
     skills: [
       "HTML", 
       "CSS", 
@@ -21,7 +45,7 @@ const projectsData = [
       "Animations", 
       "Local Storage"
     ],
-    images: ["assets/gd-1.png", "assets/gd-2.png", "assets/gd-3.png"],
+    images: ["assets/lp.png", "assets/lp-1.png", "assets/lp-2.png","assets/lp-3.png",,"assets/lp-4.png","assets/lp-5.png"],
     url: "https://lifeplan.staffoo.com.au/", // Updated to the Lifeplan URL provided earlier
 
   },
