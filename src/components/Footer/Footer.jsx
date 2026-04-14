@@ -93,7 +93,7 @@ export default function Footer() {
               Subscribe
             </button>
           </form>
-        </div>
+        </div> 
       </div>
 
       {/* Social Links */}

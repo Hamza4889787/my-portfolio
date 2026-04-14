@@ -5,6 +5,28 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const projectsData = [
   {
+
+    name: "Your LifePlan Journey",
+    desc: "Lifeplan is a comprehensive management application providing users with a structured roadmap for personal health, care planning, and goal tracking. I architected and built the entire frontend from scratch, ensuring a seamless bridge between complex backend data and a user-friendly interface. <br/><br/><strong>Key Features Implemented:</strong> <ul><li><strong>Intuitive Navigation System:</strong> Developed a custom, mobile-responsive navbar with integrated loading states and smooth transitions.</li><li><strong>Data Visualization:</strong> Created interactive dashboards to track health milestones and life goals.</li><li><strong>Responsive Architecture:</strong> Built with a 'Mobile-First' approach, ensuring full functionality on tablets and smartphones for on-the-go care management.</li><li><strong>Performance Optimization:</strong> Leveraged modern frontend techniques like client-side state management and optimized asset loading to ensure sub-second page transitions.</li></ul>",
+    skills: [
+      "HTML", 
+      "CSS", 
+      "Tailwind CSS", 
+      "Font-Awesome", 
+      "JavaScript", 
+      "React", 
+      "Typescript", 
+      "Google Gemini APIs", 
+      "Authentication & Authorization", 
+      "Animations", 
+      "Local Storage"
+    ],
+    images: ["assets/gd-1.png", "assets/gd-2.png", "assets/gd-3.png"],
+    url: "https://lifeplan.staffoo.com.au/", // Updated to the Lifeplan URL provided earlier
+
+  },
+  
+  {
     name: "GradGurus",
     desc: "Frontend for a student services website.",
     skills: ["HTML", "CSS", "Bootstrap", "Font-Awesome", "JavaScript"],
@@ -112,7 +134,7 @@ export default function Projects() {
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h2 className="text-xl font-semibold">{project.name}</h2>
-            <p className="text-gray-300 text-sm mt-1">{project.desc}</p>
+            <p className="text-gray-300 text-sm mt-1" dangerouslySetInnerHTML={{ __html: project.desc }}></p>
           </motion.div>
         ))}
       </div>
@@ -144,7 +166,7 @@ export default function Projects() {
               <h2 className="text-2xl font-bold mb-2">
                 {selectedProject.name}
               </h2>
-              <p className="text-gray-400 mb-4">{selectedProject.desc}</p>
+              <p className="text-gray-400 mb-4" >{selectedProject.desc}</p>
 
               {/* Skills */}
               <div className="mb-4">

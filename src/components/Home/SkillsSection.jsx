@@ -9,6 +9,7 @@ import {
   SiJavascript,
   SiTailwindcss,
   SiBootstrap,
+  SiTypescript,
 } from "react-icons/si";
 
 // ✅ Define skills with icon + brand color
@@ -19,6 +20,7 @@ const SKILLS = [
   { name: "Express", icon: SiExpress, color: "#000000" },
   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+  { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "Tailwind", icon: SiTailwindcss, color: "#38B2AC" },
   { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
   { name: "Git", icon: FaGitAlt, color: "#F05032" },
