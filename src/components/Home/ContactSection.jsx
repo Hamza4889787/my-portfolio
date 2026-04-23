@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, LinkedinIcon, GithubIcon } from "lucide-react";
 
 export default function ContactSection() {
   const [loading, setLoading] = useState(false);
@@ -71,6 +71,14 @@ export default function ContactSection() {
               <span className="text-gray-300">hamza4889787@gmail.com</span>
             </div>
             <div className="flex items-center gap-3">
+              <LinkedinIcon className="w-6 h-6 text-blue-500" />
+              <span className="text-gray-300">https://www.linkedin.com/in/hamza-ali-360777312/</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <GithubIcon className="w-6 h-6 text-blue-500" />
+              <span className="text-gray-300">https://github.com/Hamza4889787</span>
+            </div>
+            <div className="flex items-center gap-3">
               <Phone className="w-6 h-6 text-blue-500" />
               <span className="text-gray-300">+92 305 4365091</span>
             </div>
@@ -81,7 +89,7 @@ export default function ContactSection() {
           </div>
         </motion.div>
 
-        {/* Right Side - Form */}
+        {/* Right Side - Form 
         <motion.form
           onSubmit={handleSubmit}
           initial={{ opacity: 0, x: 50 }}
@@ -139,6 +147,7 @@ export default function ContactSection() {
 
           {status && <p className="text-center mt-4">{status}</p>}
         </motion.form>
+        */}
       </div>
     </section>
   );

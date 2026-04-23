@@ -44,18 +44,11 @@ function HeroSection() {
             transition={{ duration: 1, delay: 0.7 }}
             className="text-gray-300 text-lg md:text-xl max-w-lg mx-auto md:mx-0 mb-8 leading-relaxed"
           >
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.7 }}
-              className="text-gray-300 text-lg md:text-xl max-w-lg mx-auto md:mx-0 mb-8 leading-relaxed"
-            >
-              I am a <span className="text-blue-400">Web Developer </span>
-              passionate about building scalable, responsive, and user-friendly
-              <span className="text-purple-400"> MERN applications</span>.
-              Skilled in React, Node.js, Express, and MongoDB with experience
-              creating secure APIs, real-time apps, and modern web solutions
-            </motion.p>
+            I am a <span className="text-blue-400">Web Developer </span>
+            passionate about building scalable, responsive, and user-friendly
+            <span className="text-purple-400"> MERN applications</span>.
+            Skilled in React, Node.js, Express, and MongoDB with experience
+            creating secure APIs, real-time apps, and modern web solutions
           </motion.p>
 
           {/* Buttons */}
