@@ -4,6 +4,20 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const projectsData = [
+    {
+    name: "STAFFOO",
+    desc: "Trusted Security Workforce - Whether you're hiring security staff, looking for verified shifts, or managing assignments across Australia, Staffoo makes it fast, compliant, and reliable.",
+    skills: [
+      "React JS","HTML", "CSS", "Tailwind CSS", "JavaScript", 
+      "Rest API Integration", "Redux Toolkit",
+      "Git & GitHub"
+    ],
+    images: [
+      "/assets/sf-1.png", "/assets/sf-1 (1).png", "/assets/sf-2.png", "/assets/sf-3.png",
+      "/assets/sf-4.png", "/assets/sf-5.png"
+    ],
+    url: "https://app.staffoo.com.au/",
+  },
   {
     name: "UKA Auto Trade",
     desc: "A modern Auto trading platform for buying and selling Cars online in UK Market.",
